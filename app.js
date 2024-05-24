@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("/pc", pcRouter);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to PC Service! 😁");
+  res.send("Welcome to PC Service!");
 });
 
 app.listen(port, () => {
