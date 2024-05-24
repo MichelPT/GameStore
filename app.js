@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/ps4", ps4Router);
 
 app.get("/", (req, res) => {
-  res.send("Hello from ps4-service! ");
+  res.send("Hello from ps4-service! Come and buy your favorite ps4 games only here! But yeah our service down for now, lol");
 });
 
 // Menjalankan server di port 3001
