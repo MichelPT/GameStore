@@ -11,10 +11,13 @@ app.use(cors());
 // Buat ngubah request body yang berupa json ke dalam object
 app.use(express.json());
 
+// Middleware to parse URL-encoded data
+app.use(express.urlencoded({ extended: true }));
+
 app.use("/ps4", ps4Router);
 
 app.get("/", (req, res) => {
-  res.send("Hello from ps4-service! 😁");
+  res.send("Hello from ps4-service! ");
 });
 
 // Menjalankan server di port 3001

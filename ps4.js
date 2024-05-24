@@ -30,6 +30,8 @@ router.post("/", async (req, res) => {
   try {
     // mengambil name, price, dan rating dari request body
     const { name, price, rating } = req.body;
+    // Log the received values for debugging
+    console.log("Received:", { name, price, rating });
 
     // kalau name/price/rating kosong atau gaada kolom name/price/rating di request body
     if (!name || price === undefined || rating === undefined) {
