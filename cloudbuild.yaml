@@ -8,7 +8,7 @@ steps:
       [
         "run",
         "deploy",
-        "pc_service",
+        "pc-service",
         "--image",
         "gcr.io/$PROJECT_ID/pc-service",
         "--port",
